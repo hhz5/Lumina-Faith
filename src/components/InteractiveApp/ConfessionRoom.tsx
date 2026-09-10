@@ -76,11 +76,11 @@ export const ConfessionRoom: React.FC<ConfessionRoomProps> = ({ soundEnabled }) 
               />
             </div>
 
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-2.5 max-w-md mx-auto">
+            <div className="space-y-2.5 max-w-sm mx-auto">
               <button
                 onClick={() => handleStartRitual('wind')}
                 disabled={!confessionText.trim() || isProcessing}
-                className="w-full sm:flex-1 py-3 px-4 rounded-xl bg-[#FAF8F5] hover:bg-[#F4F1EA] dark:bg-[#181C19] dark:hover:bg-[#232924] text-[#242926] dark:text-[#EDEFEA] text-xs font-serif font-bold transition-all disabled:opacity-40 flex items-center justify-center gap-2 border border-[#E5E1D8] dark:border-[#2D3530] cursor-pointer shadow-2xs"
+                className="w-full py-3 px-4 rounded-xl bg-[#FAF8F5] hover:bg-[#F4F1EA] dark:bg-[#181C19] dark:hover:bg-[#232924] text-[#242926] dark:text-[#EDEFEA] text-xs font-serif font-bold transition-all disabled:opacity-40 flex items-center justify-center gap-2 border border-[#E5E1D8] dark:border-[#2D3530] cursor-pointer shadow-2xs"
               >
                 <Wind className="w-4 h-4 text-[#4A5D4E] dark:text-[#7B9280] shrink-0" />
                 <span className="whitespace-nowrap">化念为风 · 随风消散</span>
@@ -89,7 +89,7 @@ export const ConfessionRoom: React.FC<ConfessionRoomProps> = ({ soundEnabled }) 
               <button
                 onClick={() => handleStartRitual('fire')}
                 disabled={!confessionText.trim() || isProcessing}
-                className="w-full sm:flex-1 py-3 px-4 rounded-xl bg-[#4A5D4E] hover:bg-[#354338] text-white text-xs font-serif font-bold transition-all disabled:opacity-40 flex items-center justify-center gap-2 shadow-xs cursor-pointer"
+                className="w-full py-3 px-4 rounded-xl bg-[#4A5D4E] hover:bg-[#354338] text-white text-xs font-serif font-bold transition-all disabled:opacity-40 flex items-center justify-center gap-2 shadow-xs cursor-pointer"
               >
                 <Flame className="w-4 h-4 text-[#D4AF37] shrink-0" />
                 <span className="whitespace-nowrap">焚心化光 · 燃尽生辉</span>

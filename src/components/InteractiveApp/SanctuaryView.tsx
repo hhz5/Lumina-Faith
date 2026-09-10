@@ -163,10 +163,10 @@ export const SanctuaryView: React.FC<SanctuaryViewProps> = ({
 
           {/* Quick Mood Pulse Check */}
           <div className="pt-1">
-            <div className="text-[10px] text-[#9BA39D] mb-1.5 uppercase tracking-wider font-serif">
+            <div className="text-[10px] text-[#9BA39D] mb-2 uppercase tracking-wider font-serif">
               此刻当下的心境调谐
             </div>
-            <div className="grid grid-cols-2 sm:flex sm:items-center gap-1.5 p-1 rounded-xl bg-[#141A16]/90 border border-[#263129] max-w-sm mx-auto">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 p-1.5 rounded-2xl bg-[#141A16]/90 border border-[#263129] max-w-md mx-auto">
               {[
                 { id: 'calm', label: '澄澈宁静' },
                 { id: 'anxious', label: '略有烦忧' },
@@ -176,13 +176,13 @@ export const SanctuaryView: React.FC<SanctuaryViewProps> = ({
                 <button
                   key={m.id}
                   onClick={() => handleMoodSelect(m.id as any)}
-                  className={`py-1.5 px-2 rounded-lg text-[11px] font-medium transition-all text-center ${
+                  className={`py-2 px-3 rounded-xl text-xs font-serif transition-all text-center flex items-center justify-center cursor-pointer ${
                     mood === m.id
-                      ? 'bg-[#4A5D4E] text-white font-bold border border-[#D4AF37]/40 shadow-xs'
+                      ? 'bg-[#4A5D4E] text-white font-bold border border-[#D4AF37]/50 shadow-xs ring-1 ring-[#D4AF37]/30'
                       : 'text-[#9BA39D] hover:text-[#EDEFEA] hover:bg-[#1E2620]'
                   }`}
                 >
-                  {m.label}
+                  <span className="whitespace-nowrap">{m.label}</span>
                 </button>
               ))}
             </div>

@@ -101,14 +101,14 @@ export const ScriptureLibrary: React.FC<ScriptureLibraryProps> = ({ currentTradi
 
         {/* 1. Ancient Scripture Text */}
         {(activeTab === 'all' || activeTab === 'text') && (
-          <div className="p-4 sm:p-5 rounded-xl bg-[#FAF8F5] dark:bg-[#181C19] border border-[#E5E1D8] dark:border-[#2D3530] space-y-3 font-serif">
+          <div className="p-4 sm:p-5 rounded-xl bg-[#FAF8F5] dark:bg-[#181C19] border border-[#E5E1D8] dark:border-[#2D3530] space-y-3">
             <div className="flex items-center gap-2 pb-2 border-b border-[#E5E1D8]/60 dark:border-[#2D3530]/60">
               <span className="px-2 py-0.5 rounded-md text-[10px] font-serif font-bold bg-[#4A5D4E]/10 dark:bg-[#4A5D4E]/25 text-[#354338] dark:text-[#D4AF37] flex items-center gap-1 shrink-0">
                 <BookOpen className="w-3 h-3" /> 原典正文
               </span>
               <span className="text-[11px] text-[#6C736E] dark:text-[#9BA39D]">历代宗门善本校勘</span>
             </div>
-            <div className="space-y-2.5">
+            <div className="space-y-3">
               {selectedScripture.content.map((paragraph, idx) => (
                 <p
                   key={idx}
@@ -130,7 +130,7 @@ export const ScriptureLibrary: React.FC<ScriptureLibraryProps> = ({ currentTradi
               </span>
               <span className="text-[11px] text-[#6C736E] dark:text-[#9BA39D]">当代生活心结透视</span>
             </div>
-            <p className="text-xs sm:text-sm text-[#4E5650] dark:text-[#BAC2BC] leading-[1.85] tracking-wide text-justify font-serif">
+            <p className="text-xs sm:text-sm text-[#4E5650] dark:text-[#BAC2BC] leading-[1.9] tracking-wide text-justify font-serif">
               {selectedScripture.modernInterpretation}
             </p>
           </div>
@@ -145,7 +145,7 @@ export const ScriptureLibrary: React.FC<ScriptureLibraryProps> = ({ currentTradi
               </span>
               <span className="text-[11px] text-[#6C736E] dark:text-[#9BA39D]">当下反求诸己</span>
             </div>
-            <p className="text-xs sm:text-sm text-[#242926] dark:text-[#EDEFEA] leading-[1.85] tracking-wide text-justify font-serif italic">
+            <p className="text-xs sm:text-sm text-[#242926] dark:text-[#EDEFEA] leading-[1.9] tracking-wide text-justify font-serif italic">
               “{selectedScripture.contemplationPrompt}”
             </p>
           </div>
