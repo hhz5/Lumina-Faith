@@ -1,0 +1,7 @@
+{
+  "name": "灵境智修 - 信仰与AI创新平台与PRD研报中心",
+  "description": "信仰+AI创新项目深度分析、竞品对比、全流程PRD需求文档、UI设计图与高保真交互式产品原型",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
